@@ -15,7 +15,7 @@
     display: grid;
     height: 100vh;
     place-items: center;
-    background-image: url(bckgr.jpg);
+    background-image: url(../img/bckgr.jpg);
     background-repeat: no-repeat;
     background-position: center;
   }
