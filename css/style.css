@@ -99,3 +99,9 @@ footer a {
     line-height: 20vw;
   }
 }
+
+@media screen and (max-width: 500px) {
+  footer {
+    font-size: 3vw;
+  }
+}
