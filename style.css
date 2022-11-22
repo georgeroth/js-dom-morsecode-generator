@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  .preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+  }
+  
+  body {
+    background-color: rgb(196, 211, 251);
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    background-image: url(bckgr.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  main {
+    margin-top: -10vh
+  }
+
+  form {
+    text-align: center;
+  }
+  
+  .morse-result {
+    text-align: center;
+    font-size: 6em;
+    margin-bottom: 40px;
+    padding: 0 50px 30px 50px;
+    background: #fff;
+    border-radius: 10px;
+    cursor: default;
+  }
+
+  .morse-result span {
+    margin: 0 10px;
+  }
+  
+  .input {
+    padding: 20px;
+    border-radius: 4px;
+    border: 2px solid #000;
+  }
+  
+  .submit {
+    margin-left: 10px;
+    padding: 20px 30px;
+    background-color: #e47474;
+    border: 2px solid #000;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: .3s
+  }
+
+  .submit:hover, .submit:active {
+    background-color: #ff7c7c;
+    transition: .3s;
+    color: #fff;
+  }
+  
+  .defaultmsg {
+    font-style: italic;
+    line-height: 4rem;
+  }
+  
+  .romanNumeral {
+    font-size: 8rem;
+    font-family: serif
+  }
+
+  footer {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    font-family: sans-serif;
+    color: #666;
+    font-size: .9rem;
+    cursor: default;
+  }
+
+  footer a {
+    color: #666
+  }
+  
+  @media screen and (max-width: 900px) {
+    .morse-result {
+      font-size: 15vw;
+    }
+    .morse-result {
+      line-height: 15vw;
+    }
+  }
