@@ -49,20 +49,27 @@ function getUserInput() {
     form.addEventListener("submit", (event) => {
         event.preventDefault()
         state.userInput = form[0].value
-        morseConverterAndRender()
+        morseConverter()
+        render()
     })
 }
 
-function morseConverterAndRender() {
+function morseConverter() {
     state.result = ""
+    for (letter of state.userInput.toLowerCase()) { // Loop through the elements of the input string
+        state.result += state.characterMap[letter] || "🤔" //  – use the function to add the correct morse code to a new string
+    }
+}
+
+function render() {
     const resultSection = document.querySelector(".morse-result")
-    resultSection.innerHTML = ""
+    resultSection.innerHTML = ''
 
     const resultDiv = document.createElement("div")
 
-    for (letter of state.userInput.toLowerCase()) {
+    for (letter of state.result) {
         const letterSpan = document.createElement("span")
-        letterSpan.innerText = state.characterMap[letter] || "🤔" 
+        letterSpan.innerText = letter
         resultDiv.appendChild(letterSpan)
     }
     resultSection.appendChild(resultDiv)
