@@ -13,7 +13,7 @@
   body {
     background-color: rgb(196, 211, 251);
     display: grid;
-    height: 100vh;
+    height: 100%;
     place-items: center;
     background-image: url(../img/bckgr.jpg);
     background-size: cover;
